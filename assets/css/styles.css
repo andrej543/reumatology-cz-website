@@ -134,12 +134,30 @@ body::before {
   font: inherit;
   font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  padding: 0.4rem 0.6rem;
+  padding: 0.35rem 0.45rem;
+  min-width: 2.25rem;
+  min-height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   background: transparent;
   cursor: pointer;
   color: var(--color-ink-muted);
+}
+
+.lang-switch__flag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+
+.lang-switch__flag svg {
+  height: 0.85rem;
+  width: auto;
+  display: block;
+  border-radius: 1px;
 }
 
 .lang-switch__btn.is-active {
